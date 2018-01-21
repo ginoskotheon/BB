@@ -81,14 +81,17 @@ img:hover {
 /* ------- Circle Menu --------- */
 
 .circular-menu {
-    height: 250px;
-    width: 250px;
-    left: 40%;
-    top: 30%;
+    /* background: red; */
+    height: calc(100vw/3);
+    width: calc(100vw/3);
+    left: calc(100vw/3); 
+    top: 10%;
     position: absolute;
+    z-index: 2;
 
    
 }
+
 
 .circleback{
     content: '';
@@ -214,8 +217,11 @@ img:hover {
 
 .explore{
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     border: none;
     outline: none;
     border-radius: 15px;
@@ -226,6 +232,7 @@ img:hover {
     color: #DAA520;
     font-size: 16px;
     cursor: pointer;
+    z-index: 99;
 }
 
 .explore:hover{
@@ -259,3 +266,179 @@ footer {
         margin: 1%;
     }
 }
+
+
+
+/* ------- Dog Paw ------- */
+
+.dog {
+    position: absolute;
+    /* background:#FFF; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width:inherit;
+    height:inherit;
+    -webkit-transform: scale(0) rotate(0deg);
+    transform: scale(0) rotate(0deg);
+    opacity: 0;
+    z-index: 0;
+    -webkit-transition: all 0.4s ease-out;
+    -moz-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+ 
+
+}
+.open.dog{
+    opacity: 1;
+
+    
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+
+.dog a {
+    color: #fff;
+    text-decoration: none;
+}
+    
+    .pad {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /* left:35px; top:100px;  */
+    content: "";background:#333;
+    width:300px; height:300px;
+    border-radius:200px/200px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow:         3px 3px 5px 6px #ccc;
+    }
+
+    .base {
+        position:relative;
+        content: "";background:#000;
+        width:120px; height:120px;
+        text-align: center;
+        line-height: 120px;
+        border-radius:80px/80px;
+        overflow: hidden;
+        
+    }
+    .base-left{
+        left:-20px; top:200px; 
+        
+        
+    }
+
+    .base-right{
+        left:200px; top:80px; 
+        -webkit-box-shadow: 5px 5px 2px 3px #CCC;
+        box-shadow:         5px 5px 2px 3px #CCC;
+    }
+    /* .base-left-2{position:relative;
+    left:10px; top:-170px; 
+    content: "";background:#FFF;
+    width:40px; height:40px;
+    border-radius:40px/40px;
+    } */
+    /* .base-right-2{position:relative;
+    left:290px; top:-310px; 
+    content: "";background:#FFF;
+    width:40px; height:40px;
+    border-radius:40px/40px;
+    } */
+
+    .toe {
+        position:relative;
+         overflow: hidden;
+        
+    background:#000;
+    width:100px; height:150px;
+    text-align: center;
+    line-height: 150px;
+    border-radius:70px/100px;
+    -webkit-box-shadow: 1px 1px 3px 4px #ccc;
+    box-shadow:         1px 1px 3px 4px #ccc;
+    }
+    .toe-1 {
+    left:-80px; top:-330px; 
+        
+    }
+    .toe-2 {
+    left:40px; top:-550px; 
+
+    }
+    .toe-3 {
+    left:160px; top:-700px; 
+    
+    }
+    .toe-4 {
+    left:280px; top:-780px; 
+
+    }
+    @media (max-width: 1500px){
+        .circular-menu {
+            top: 25%;
+        }
+    }
+
+    @media (max-width: 800px){
+        .circular-menu {
+            height: calc(100vw/2);
+            width: calc(100vw/2);
+            top: 25%;
+            left: 25%;
+        }
+
+        .pad{
+            width: 125px;
+            height: 125px;
+        }
+        .toe {
+            height: 75px;
+            width: 50px;
+            line-height: 75px;
+            
+        }
+
+        
+        .toe-1{
+            left:-50px; top:-160px; 
+            
+        }
+        .toe-2 {
+            left:5px; top:-270px; 
+            
+        }
+        .toe-3{
+            left:65px; top:-345px; 
+            
+        }
+        .toe-4{
+            left:120px; top:-380px; 
+            
+        }
+        .base {
+            height: 50px;
+            width: 50px;
+            line-height: 50px;
+        }
+        .base-left {
+            
+            left:-20px; top:80px; 
+            
+        }
+        .base-right{
+            left:90px; top:30px; 
+            
+        }
+        .explore {
+            width: 75px;
+            height: 50px;
+        }
+    }

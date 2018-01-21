@@ -26,19 +26,47 @@
     </div> -->
 
     <div class="circular-menu">
-        <div class="circle">
+        <!-- <div class="circle">
             <a href="females.html">Females</a>
             <a href="males.html">Males</a>
             <a href="breeds.html">Future Breeds</a>
             <a href="puppies.html">Puppies</a>
             <a href="contact.html">Contact Us</a>
             <a href="index.html">Home</a>            
-            <!-- <div class="circleback"></div> -->
+            <div class="circleback"></div>
             
-            <!-- <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a> -->
-        </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div> -->
         <!-- <a href="" class="menu-button fa fa-bars fa-2x"></a>   -->
         <input type="button" value="Explore" class="explore" />
+        <div class="dog">
+            <div class="pad">
+                <div class="base base-left">
+                    <a href="index.html">Home</a>                
+                </div>
+                <div class="base base-right">
+                    <a href="contact.html">Contact Us</a>     
+                </div>
+                <div class="base-left-2"></div>
+                <div class="base-right-2"></div>
+                <div class="toe toe-1">
+                    <a href="breeds.html">Future Breeds</a>                
+                </div>
+                <div class="toe toe-2">
+                    <a href="puppies.html">Puppies</a>                
+                </div>
+                <div class="toe toe-3">
+                    <a href="males.html">Males</a>     
+                </div>
+                <div class="toe toe-4">
+                    <a href="females.html">Females</a> 
+                </div>
+                    
+
+            </div>
+            
+        </div>
+        
               
     </div>
     <div class="container main">
@@ -52,18 +80,25 @@
     <script src="assets/js/lightbox-plus-jquery.min.js"></script>
     <!-- <script src="assets/js/nav.js"></script> -->
     <script>
-        document.querySelector('.explore').onclick = function(e){
-            e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
-            // e.preventDefault(); document.querySelector('.circleback').classList.toggle('open');
-            
-        }
 
-        var items = document.querySelectorAll('.circle a');
-        var menuRadius = 75;
-        for(var i = 0, l = items.length; i < l; i++) {
-            items[i].style.left = (50 - menuRadius*Math.cos(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
-            items[i].style.top = (20 + menuRadius*Math.sin(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
-        }
+            document.querySelector('.explore').onclick = function(e){
+                e.preventDefault(); document.querySelector('.dog').classList.toggle('open');
+                // e.preventDefault(); document.querySelector('.circleback').classList.toggle('open');
+                
+            }
+
+        // document.querySelector('.explore').onclick = function(e){
+        //     e.preventDefault(); document.querySelector('.circle').classList.toggle('open');
+        //     // e.preventDefault(); document.querySelector('.circleback').classList.toggle('open');
+            
+        // }
+
+        // var items = document.querySelectorAll('.circle a');
+        // var menuRadius = 75;
+        // for(var i = 0, l = items.length; i < l; i++) {
+        //     items[i].style.left = (50 - menuRadius*Math.cos(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+        //     items[i].style.top = (20 + menuRadius*Math.sin(-0.5 * Math.PI - 2*(1/l)*i*Math.PI)).toFixed(4) + "%";
+        // }
     </script>
 
 </body>
